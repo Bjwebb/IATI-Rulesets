@@ -6,8 +6,8 @@
   exclude-result-prefixes="functx"
   expand-text="yes">
 
-  <xsl:variable name="known-publisher-ids" select="doc('../../var/known-publishers.xml')//code"/>
-  <xsl:variable name="org-id-prefixes" select="doc('../../var/known-orgid-prefixes.xml')//code"/>
+  <xsl:variable name="known-publisher-ids" select="doc('../var/known-publishers.xml')//code"/>
+  <xsl:variable name="org-id-prefixes" select="doc('../var/known-orgid-prefixes.xml')//code"/>
   
   <xsl:template name="identifier_check">
     <xsl:param name="item"/>
